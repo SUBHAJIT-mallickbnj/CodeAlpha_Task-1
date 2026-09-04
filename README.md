@@ -17,22 +17,6 @@ Linkloom accepts a valid `http://` or `https://` URL, creates a unique seven-cha
 
 ## Preview
 
-<div align="center">
-	<img src="docs/screenshots/home-light.png" alt="Linkloom desktop light mode" width="100%">
-	<br><br>
-	<img src="docs/screenshots/home-dark.png" alt="Linkloom desktop dark mode" width="100%">
-</div>
-
-<details>
-	<summary><strong>More interface views</strong></summary>
-	<br>
-	<p align="center"><strong>SQLite archive</strong></p>
-	<img src="docs/screenshots/archive.png" alt="Linkloom authenticated archive" width="100%">
-	<br><br>
-	<p align="center"><strong>Responsive mobile layout</strong></p>
-	<img src="docs/screenshots/mobile.png" alt="Linkloom mobile layout" width="390">
-</details>
-
 ## Technology stack
 
 | Technology | Why it is used | Official link |
