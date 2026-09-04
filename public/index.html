@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Linkloom turns long URLs into clean, memorable links.">
+  <title>Linkloom | Your links, beautifully shortened</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Linkloom home"><span class="brand-mark">↗</span><span>linkloom</span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#recent">Recent links</a></nav>
+    <div class="header-actions"><button id="theme-toggle" class="icon-button" aria-label="Switch to dark mode" title="Toggle dark mode">☾</button><button id="database-button" class="database-button">Database <span>↗</span></button></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy-block"><div class="eyebrow">The calm corner of the internet <span>✦</span></div><h1>Share links<br><em>with intention.</em></h1><p class="hero-copy">Turn unwieldy URLs into clean, memorable links that feel as considered as the work behind them.</p><div class="hero-proof"><span class="proof-avatars"><i>l</i><i>m</i><i>k</i></span><span>Trusted for everyday sharing</span></div></div>
+      <div class="shorten-shell"><div class="shell-top"><span class="shell-kicker">Create a link</span><span class="secure-label"><span class="secure-dot"></span>SQLite secured</span></div><form id="shorten-form"><label for="url-input">Paste a long URL</label><div class="input-row"><input id="url-input" name="url" type="url" placeholder="https://your-big-link.com/with/a/lot/to/say" required autocomplete="url"><button type="submit"><span>Shorten link</span><span class="button-arrow">↗</span></button></div></form><div id="result" class="result" aria-live="polite"></div></div>
+    </section>
+
+    <section class="stats-strip" aria-label="Linkloom highlights"><div><strong>01</strong><span>Paste any URL</span></div><div><strong>02</strong><span>Get a clean alias</span></div><div><strong>03</strong><span>Share everywhere</span></div><div class="stats-note">Fast by design.<br>Private by default.</div></section>
+
+    <section id="how-it-works" class="how-section"><div class="section-intro"><span class="section-label">A little less noise</span><h2>Good links<br><em>travel well.</em></h2><p>Linkloom keeps the useful part of a URL and leaves the clutter behind. Every link is stored locally, ready whenever you need it.</p></div><div class="process-grid"><article class="process-card process-image"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=85" alt="Designer arranging a clean digital interface"><span class="image-caption">Designed for clarity</span></article><article class="process-card"><span class="step-number">01</span><h3>Drop it in</h3><p>Paste a long destination into the link workspace. HTTPS and HTTP links are checked automatically.</p><span class="card-arrow">↘</span></article><article class="process-card accent-card"><span class="step-number">02</span><h3>Make it memorable</h3><p>A unique seven-character code is created and saved permanently to your local SQLite database.</p><span class="card-arrow">↘</span></article><article class="process-card"><span class="step-number">03</span><h3>Take it with you</h3><p>Copy the short link in one click. Your original URL stays attached, so nothing gets lost.</p><span class="card-arrow">↘</span></article></div></section>
+
+    <section id="recent" class="recent-section"><div class="section-heading"><div><span class="section-label">Your link shelf</span><h2>Recently made</h2></div><div class="count-wrap"><span id="link-count" class="count">0 links</span><button id="view-database" class="text-button">View all ↗</button></div></div><div id="links-list" class="links-list"><div class="empty-state">Your latest links will land here.</div></div></section>
+    <section class="contact-section" aria-labelledby="contact-title"><div><span class="section-label">Stay connected</span><h2 id="contact-title">Need a hand<br><em>with your links?</em></h2></div><div class="contact-details"><p>Reach out directly. I am always happy to talk through the details.</p><a class="contact-link" href="https://wa.me/916296623680" target="_blank" rel="noopener noreferrer"><span class="contact-icon">◌</span><span><small>WhatsApp</small>+91 6296623680</span><span class="contact-arrow">↗</span></a><a class="contact-link" href="mailto:subhajitmallick2004.it.aec@gmail.com"><span class="contact-icon">@</span><span><small>Email</small>subhajitmallick2004.it.aec@gmail.com</span><span class="contact-arrow">↗</span></a></div></section>
+  </main>
+  <footer><span>LINKLOOM / 2026</span><span>SHORTER BY DESIGN</span><span>BUILT FOR THE LINKS THAT MATTER</span></footer>
+
+  <div id="auth-modal" class="modal-backdrop" hidden><section class="auth-modal modal-card" role="dialog" aria-modal="true" aria-labelledby="auth-title"><button class="modal-close" data-close-modal aria-label="Close">×</button><div class="modal-orbit">↗</div><span class="section-label">Private workspace</span><h2 id="auth-title">Open your<br><em>link archive.</em></h2><p>Enter your workspace credentials to see every shortened link and its original destination.</p><form id="auth-form"><label for="username">Username</label><input id="username" autocomplete="username" required><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" required><div id="auth-error" class="form-error"></div><button class="modal-submit" type="submit">Unlock database <span>↗</span></button></form><small>Local workspace access only</small></section></div>
+  <div id="database-modal" class="modal-backdrop" hidden><section class="database-modal modal-card" role="dialog" aria-modal="true" aria-labelledby="database-title"><div class="database-head"><div><span class="section-label">Private workspace / archive</span><h2 id="database-title">All your links.</h2></div><button class="modal-close" data-close-modal aria-label="Close">×</button></div><div class="database-toolbar"><span id="database-count">0 saved links</span><span><span class="secure-dot"></span>Persisted in SQLite</span></div><div id="database-list" class="database-list"></div></section></div>
+  <script src="/app.js"></script>
+</body>
+</html>

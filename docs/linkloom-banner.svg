@@ -1,0 +1,19 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E76D50"><animate attributeName="stop-color" values="#E76D50;#CBD776;#C8DCE1;#E76D50" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="0.5" stop-color="#CBD776"><animate attributeName="stop-color" values="#CBD776;#C8DCE1;#E76D50;#CBD776" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#C8DCE1"><animate attributeName="stop-color" values="#C8DCE1;#E76D50;#CBD776;#C8DCE1" dur="8s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="28"/></filter>
+  </defs>
+  <rect width="1200" height="320" rx="18" fill="#17201D"/>
+  <circle cx="160" cy="60" r="150" fill="#E76D50" opacity="0.75" filter="url(#soft)"><animate attributeName="cx" values="160;300;160" dur="9s" repeatCount="indefinite"/></circle>
+  <circle cx="1050" cy="260" r="180" fill="#CBD776" opacity="0.6" filter="url(#soft)"><animate attributeName="cy" values="260;120;260" dur="11s" repeatCount="indefinite"/></circle>
+  <rect x="34" y="34" width="1132" height="252" rx="12" fill="url(#wash)" opacity="0.92"/>
+  <rect x="35" y="35" width="1130" height="250" rx="11" stroke="#FFFEFA" stroke-opacity="0.35"/>
+  <text x="78" y="118" fill="#17201D" font-family="Verdana, sans-serif" font-size="18" font-weight="700" letter-spacing="4">A CALM CORNER FOR</text>
+  <text x="74" y="196" fill="#17201D" font-family="Verdana, sans-serif" font-size="72" font-weight="800" letter-spacing="-4">LINKLOOM</text>
+  <text x="80" y="238" fill="#17201D" font-family="monospace" font-size="16" letter-spacing="2">SHORT LINKS / LOCAL STORAGE / LESS NOISE</text>
+  <circle cx="1080" cy="90" r="30" fill="#17201D"/><path d="M1068 102L1092 78M1075 78H1092V95" stroke="#FFFEFA" stroke-width="5" stroke-linecap="square"/>
+</svg>
